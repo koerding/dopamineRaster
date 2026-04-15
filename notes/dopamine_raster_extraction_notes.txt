@@ -1,0 +1,23 @@
+Spike extraction from dopamine raster image
+
+Method:
+- Manually cropped the three raster panels.
+- Detected spike-like blobs with Laplacian-of-Gaussian blob detection.
+- Explicitly masked vertical border lines and the central event line before blob detection.
+- Rendered a reconstruction with thickened lines and filled dot disks to maximize dark-pixel coverage.
+- Converted x-position to seconds using panel-specific anchors read from the figure.
+
+Caveats:
+- This is approximate digitization from a low-resolution image, not ground truth.
+- Spikes that sit exactly on the vertical event line can be undercounted.
+- y-coordinates are preserved as pixel positions; no attempt was made to assign discrete trial numbers.
+
+Detected spikes per panel:
+- no_prediction_reward_occurs: 231
+- reward_predicted_reward_occurs: 316
+- reward_predicted_no_reward_occurs: 291
+
+Dark-pixel coverage fraction of the reconstruction:
+- no_prediction_reward_occurs: 0.947
+- reward_predicted_reward_occurs: 0.895
+- reward_predicted_no_reward_occurs: 0.958

@@ -1,0 +1,4 @@
+panel,crop_x0_abs,crop_x1_abs,crop_y0_abs,crop_y1_abs,raster_y_start_in_panel_px,raster_y_end_in_panel_px,anchors,n_spikes_detected
+no_prediction_reward_occurs,392,772,201,353,47,149,"[(0, -1.0), (239, 1.0), (379, 2.0)]",231
+reward_predicted_reward_occurs,319,770,447,603,50,149,"[(0, -1.0), (139, 0.0), (450, 2.0)]",316
+reward_predicted_no_reward_occurs,320,770,702,856,49,149,"[(0, -1.0), (141, 0.0), (449, 2.0)]",291
